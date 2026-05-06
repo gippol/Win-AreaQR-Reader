@@ -1,0 +1,24 @@
+﻿<Window x:Class="ScreenQRCodeReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenQRCodeReader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="250">
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Content="QRコード取得" Height="40" Click="Capture_Click"/>
+            <Image x:Name="DebugImage"
+       Height="120"
+       Stretch="Uniform"
+       Margin="0,10"/>
+            <TextBox x:Name="ResultText"
+                 Margin="0,10,0,10"
+                 Height="60"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"/>
+            <Button Content="コピー" Height="40" Click="Copy_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

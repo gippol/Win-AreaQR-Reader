@@ -1,0 +1,50 @@
+## [Visual Studio / MSBuild]
+# ビルド成果物 (バイナリ)
+[Bb]in/
+[Oo]bj/
+[Aa]rm/
+[Aa]rm64/
+[Xx]64/
+[Xx]86/
+
+# MSBuildの一時ファイル
+*.VC.db
+*.VC.opendb
+
+## [WPF / XAML]
+# WPFの内省的・中間生成ファイル (XAMLから生成されるC#コードなど)
+*.g.cs
+*.g.i.cs
+*.l.cs
+
+## [Visual Studio User Settings]
+# ユーザー固有の設定 (ウィンドウ配置、ブレークポイント等)
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## [NuGet Packages]
+# NuGetパッケージ本体 (packagesフォルダ)
+**/packages/*
+# NuGetが生成する一時ファイル
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+## [Operating System]
+# OSが生成するキャッシュ
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## [Publishing / Deployment]
+# ClickOnceや発行プロファイル
+*.publish.xml
+publish/
+
+## [Testing]
+# テスト結果やカバレッジレポート
+TestResults/
+*.sequenced
